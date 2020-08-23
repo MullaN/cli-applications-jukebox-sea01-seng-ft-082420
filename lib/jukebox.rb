@@ -42,4 +42,15 @@ end
 def run
   puts "Please enter a command:"
   command = gets.strip
+  while
+    if command == "play"
+      play
+    elsif command == "list"
+      list
+    elsif command == "help"
+      help
+    elsif command == "exit"
+      exit
+      break
+  end
 end
