@@ -19,8 +19,12 @@ def help
   puts "- exit : exits this program"
 end
 
-def play
-
+def play(songs)
+  puts "Please enter a song name or number:"
+  track = gets.strip
+  if track.to_i > 0 && track.to_i <= songs.length
+    puts "Playing #{songs[track.to_i - 1]}"
+  end
 end
 
 def list(songs)
