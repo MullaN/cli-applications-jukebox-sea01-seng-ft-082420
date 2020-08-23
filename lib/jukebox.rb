@@ -50,7 +50,7 @@ def run(songs)
     elsif command == "help"
       help
     elsif command == "exit"
-      exit
+      exit_jukebox
       break
     else
 
