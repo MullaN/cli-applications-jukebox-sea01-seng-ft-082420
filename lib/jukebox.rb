@@ -40,9 +40,9 @@ def exit_jukebox
 end
 
 def run
-  puts "Please enter a command:"
-  command = gets.strip
   while
+    puts "Please enter a command:"
+    command = gets.strip
     if command == "play"
       play
     elsif command == "list"
@@ -52,5 +52,8 @@ def run
     elsif command == "exit"
       exit
       break
+    else
+      
+    end
   end
 end
